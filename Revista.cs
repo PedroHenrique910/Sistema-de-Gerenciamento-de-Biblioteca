@@ -1,18 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sistema_de_gereciamento_de_biblioteca
+namespace Sistema_de_gerenciamento_de_biblioteca
 {
     public class Revista : LibraryItem
     {
         public string Volume;
-        public int Edicao;
+        public string Edicao;
 
         public Revista(string titulo, string autor, int isbn, int ano_da_publicacao, string genero,
-            string editora, string volume, int edicao)
+            string editora, string volume, string edicao)
         {
             Titulo = titulo;
             Autor = autor;
@@ -24,7 +18,7 @@ namespace Sistema_de_gereciamento_de_biblioteca
 
             public override void DisplayInfo()
         {
-            Console.WriteLine($"{Volume} / {Edicao}");
+            Console.WriteLine($"{Titulo} / {Autor} / {ISBN} / {AnoDaPublicacao} {Volume} / {Edicao}");
         }
     }
 }

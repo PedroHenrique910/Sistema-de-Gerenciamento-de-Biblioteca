@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sistema_de_gereciamento_de_biblioteca
+namespace Sistema_de_gerenciamento_de_biblioteca
 {
     public abstract class LibraryItem
     {
@@ -12,6 +6,7 @@ namespace Sistema_de_gereciamento_de_biblioteca
         public string? Autor;
         public int ISBN;
         public int AnoDaPublicacao;
+        public int ItemID;
 
         public virtual void DisplayInfo()
         {

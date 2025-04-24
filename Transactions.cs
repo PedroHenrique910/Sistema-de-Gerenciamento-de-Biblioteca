@@ -1,43 +1,45 @@
+namespace Sistema_de_gerenciamento_de_biblioteca;
 public class Transaction 
 {
-    public int TransactionID;
-    public int MemberID;
-    public int LibraryItemID;
-    public int BorrowDate ;
-    public int ReturnDate;
-    public DateTime? ActualReturnDate;
-    
-    
-    public Transaction(int transactionId, int memberId, int libraryItemId, int borrowDate, int returnDate)
+    public int TransactionID { get; set; }
+    public int MemberID { get; set; }
+    public LibraryItem Item { get; set; } // Aqui entra o polimorfismo
+    public DateTime BorrowDate { get; set; }
+    public DateTime ReturnDate { get; set; }
+    public DateTime? ActualReturnDate { get; set; }
+
+    public Transaction(int transactionId, int memberId, LibraryItem item, DateTime borrowDate, DateTime returnDate)
     {
         TransactionID = transactionId;
         MemberID = memberId;
-        LibraryItemID = libraryItemId;
+        Item = item;
         BorrowDate = borrowDate;
         ReturnDate = returnDate;
         ActualReturnDate = null;
     }
 
-
-    public bool Borrow(int transactionId, int memberId, int itemId, int borrowDate, int returnDate)
+    public bool Borrow()
     {
-        // Basic validation
-        if (returnDate <= borrowDate)
+        if (ReturnDate <= BorrowDate)
         {
-            Console.WriteLine("Return date must be after borrow date.");
+            Console.WriteLine("A data de devolução deve ser posterior à data de empréstimo");
             return false;
         }
 
-
-        Console.WriteLine($"Transaction {TransactionID} - Member {MemberID} borrowed item {LibraryItemID} from {BorrowDate} to {ReturnDate}.");
+        Console.WriteLine($"Transação: {TransactionID} - Membro: {MemberID} item emprestado {Item.ItemID} de {BorrowDate.ToShortDateString()} até {ReturnDate.ToShortDateString()}.");
         return true;
-        
     }
 
-     public void ReturnItem(DateTime returnDate)
+    public virtual void ReturnItem(DateTime returnDate)
     {
         ActualReturnDate = returnDate;
-        Console.WriteLine($"Item {LibraryItemID} returned on {returnDate.ToShortDateString()}.");
+        Console.WriteLine($"O item {Item.ItemID} foi devolvido em {returnDate.ToShortDateString()}.");
     }
 
+    public void ProcessTransaction()
+    {
+        Console.WriteLine($"\nTransação n°{TransactionID} para o membro n° {MemberID}");
+        Item.DisplayInfo(); // Polimorfismo funcionando aqui
+        Console.WriteLine($"Data do empréstimo: {BorrowDate.ToShortDateString()} | Data de devolução: {ReturnDate.ToShortDateString()}");
+    }
 }

@@ -1,4 +1,4 @@
-namespace Sistema_de_gereciamento_de_biblioteca
+namespace Sistema_de_gerenciamento_de_biblioteca
 {
     public class Livro : LibraryItem
     {
@@ -16,8 +16,8 @@ namespace Sistema_de_gereciamento_de_biblioteca
 
         public override void DisplayInfo()
         {
-            Console.WriteLine($"{Genero} / {Editora}");
+            Console.WriteLine($"{Titulo} / {Autor} / {ISBN} / {AnoDaPublicacao} {Genero} / {Editora}");
         }
-
+        
     }
 }

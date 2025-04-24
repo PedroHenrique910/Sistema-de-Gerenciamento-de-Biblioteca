@@ -1,61 +1,68 @@
-namespace Sistema_de_gereciamento_de_biblioteca
+
+namespace Sistema_de_gerenciamento_de_biblioteca
 {
     public class Membro
     {
-        public string? Nome;
+        public string Nome;
         public int ID;
-        public string? Email;
+        public string Email;
         public string NumeroTelefone;
 
-        public Membro(int id, string nome, string email, string numeroTelefone)
+        public Membro(string nome, int id, string email, string numeroTelefone)
         {
             ID = id;
             Nome = nome;
             Email = email;
             NumeroTelefone = numeroTelefone;
+
         }
 
         public List<Membro> membro = new List<Membro>();
 
-        public void AdicionarMembro(int id, string nome, string email, string numeroTelefone)
+        public void AdicionarMembro(string nome, int id, string email, string numeroTelefone)
         {
-            Membro novoMembro = new Membro(id, nome, email, numeroTelefone);
+            Membro novoMembro = new Membro(nome, id, email, numeroTelefone);
             membro.Add(novoMembro);
-            Console.WriteLine($"Pessoa {nome} adicionada com sucesso!");
+            Console.WriteLine($"{nome} adicionada com sucesso!");
         }
 
-         public void AtualizarMembro(int id, string? novoNome, string? novoEmail, string? novoTelefone)
+        public void AtualizarDados(string? novoNome, string novoID, string? novoEmail, string? novoTelefone)
         {
-            var pessoa = membro.FirstOrDefault(p => p.ID == id);
+            if (!string.IsNullOrWhiteSpace(novoNome))
+                Nome = novoNome;
 
-            if (pessoa != null)
+            if (!string.IsNullOrWhiteSpace(novoID))
+                Nome = novoID;
+
+            if (!string.IsNullOrWhiteSpace(novoEmail))
+                Email = novoEmail;
+
+            if (!string.IsNullOrWhiteSpace(novoTelefone))
+                NumeroTelefone = novoTelefone;
+        }
+
+
+
+        public void RemoverMembro(int id)
+        {
+            var membroParaRemover = membro.FirstOrDefault(m => m.ID == id);
+
+            if (membroParaRemover != null)
             {
-                if (!string.IsNullOrWhiteSpace(novoNome))
-                    pessoa.Nome = novoNome;
-
-                if (!string.IsNullOrWhiteSpace(novoEmail))
-                    pessoa.Email = novoEmail;
-
-                if (!string.IsNullOrWhiteSpace(novoTelefone))
-                    pessoa.NumeroTelefone = novoTelefone;
-
-                Console.WriteLine($"Pessoa com ID {id} atualizada com sucesso!");
+                membro.Remove(membroParaRemover);
+                Console.WriteLine($"{membroParaRemover.Nome} foi removido com sucesso!");
             }
-
             else
             {
-                Console.WriteLine($"Pessoa com ID {id} não encontrada.");
+                Console.WriteLine($"Nenhum membro com ID {id} foi encontrado.");
             }
-
         }
-        
-        public void RemoverMembro(int id, string nome, string email, string numeroTelefone)
+
+
+        internal void RemoverMembro()
         {
-            Membro novoMembro = new Membro(id, nome, email, numeroTelefone);
-            membro.Remove(novoMembro);
-            Console.WriteLine($"Pessoa {nome} foi removido com sucesso!");
+            throw new NotImplementedException();
         }
-
     }
 
 }

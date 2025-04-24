@@ -1,0 +1,15 @@
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.sourcelink.json
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\bin\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.exe
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\bin\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.deps.json
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\bin\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.runtimeconfig.json
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\bin\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.dll
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\bin\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.pdb
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.dll
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\refint\Sistema_de_gerenciamento_de_biblioteca.dll
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.pdb
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\Sistema_de_gerenciamento_de_biblioteca.genruntimeconfig.cache
+C:\Users\pedro\OneDrive\Documentos\GitHub\Sistema-de-Gerenciamento-de-Biblioteca\obj\Debug\net9.0\ref\Sistema_de_gerenciamento_de_biblioteca.dll
