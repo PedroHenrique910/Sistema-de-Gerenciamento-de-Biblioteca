@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\OneDrive\\Projetos e Sites\\Sistema de gerenciamento de biblioteca\\Sistema_de_gerenciamento_de_biblioteca\\Sistema_de_gerenciamento_de_biblioteca.csproj": {}
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Sistema-de-Gerenciamento-de-Biblioteca\\Sistema_de_gerenciamento_de_biblioteca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\OneDrive\\Projetos e Sites\\Sistema de gerenciamento de biblioteca\\Sistema_de_gerenciamento_de_biblioteca\\Sistema_de_gerenciamento_de_biblioteca.csproj": {
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Sistema-de-Gerenciamento-de-Biblioteca\\Sistema_de_gerenciamento_de_biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Projetos e Sites\\Sistema de gerenciamento de biblioteca\\Sistema_de_gerenciamento_de_biblioteca\\Sistema_de_gerenciamento_de_biblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Sistema-de-Gerenciamento-de-Biblioteca\\Sistema_de_gerenciamento_de_biblioteca.csproj",
         "projectName": "Sistema_de_gerenciamento_de_biblioteca",
-        "projectPath": "C:\\Users\\pedro\\OneDrive\\Projetos e Sites\\Sistema de gerenciamento de biblioteca\\Sistema_de_gerenciamento_de_biblioteca\\Sistema_de_gerenciamento_de_biblioteca.csproj",
+        "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Sistema-de-Gerenciamento-de-Biblioteca\\Sistema_de_gerenciamento_de_biblioteca.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\OneDrive\\Projetos e Sites\\Sistema de gerenciamento de biblioteca\\Sistema_de_gerenciamento_de_biblioteca\\obj\\",
+        "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\Sistema-de-Gerenciamento-de-Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
