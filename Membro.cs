@@ -17,28 +17,14 @@ namespace Sistema_de_gereciamento_de_biblioteca
 
         public List<Membro> membro = new List<Membro>();
 
-        public void AdicionarPessoa(int id, string nome, string email, string numeroTelefone)
+        public void AdicionarMembro(int id, string nome, string email, string numeroTelefone)
         {
             Membro novoMembro = new Membro(id, nome, email, numeroTelefone);
             membro.Add(novoMembro);
             Console.WriteLine($"Pessoa {nome} adicionada com sucesso!");
         }
 
-        public void RemoverPessoa(int id, string nome, string email, string numeroTelefone)
-        {
-            Membro novoMembro = new Membro(id, nome, email, numeroTelefone);
-            membro.Remove(novoMembro);
-            Console.WriteLine($"Pessoa {nome} foi removido com sucesso!");
-        }
-
-        public void DeletarPessoa(int id, string nome, string email, string numeroTelefone)
-        {
-            Membro novoMembro = new Membro(id, nome, email, numeroTelefone);
-            membro.(novoMembro);
-            Console.WriteLine($"Pessoa {nome} foi removido com sucesso!");
-        }
-
-        public void AtualizarPessoa(int id, string? novoNome, string? novoEmail, string? novoTelefone)
+         public void AtualizarMembro(int id, string? novoNome, string? novoEmail, string? novoTelefone)
         {
             var pessoa = membro.FirstOrDefault(p => p.ID == id);
 
@@ -55,10 +41,19 @@ namespace Sistema_de_gereciamento_de_biblioteca
 
                 Console.WriteLine($"Pessoa com ID {id} atualizada com sucesso!");
             }
+
             else
             {
                 Console.WriteLine($"Pessoa com ID {id} não encontrada.");
             }
+
+        }
+        
+        public void RemoverMembro(int id, string nome, string email, string numeroTelefone)
+        {
+            Membro novoMembro = new Membro(id, nome, email, numeroTelefone);
+            membro.Remove(novoMembro);
+            Console.WriteLine($"Pessoa {nome} foi removido com sucesso!");
         }
 
     }
