@@ -16,8 +16,8 @@ namespace Sistema_de_gerenciamento_de_biblioteca
 
         public override void DisplayInfo()
         {
-            Console.WriteLine($"{Titulo} / {Autor} / {ISBN} / {AnoDaPublicacao} {Genero} / {Editora}");
+            Console.WriteLine($"Gênero: {Genero} Editora: {Editora}");
         }
-        
+
     }
 }
